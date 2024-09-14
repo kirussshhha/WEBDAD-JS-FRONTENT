@@ -11,7 +11,6 @@ body {
   background-color: rgba(244, 245, 247, 1);
 }
 
-/*header*/
 .title-block {
   width: 100%;
   height: 11.5rem;
@@ -29,7 +28,6 @@ body {
   color: rgba(23, 25, 28, 1);
 }
 
-/*main*/
 .main-container {
   width: 80%;
   max-width: 64rem;
@@ -46,7 +44,6 @@ body {
   padding-right: 9.9rem;
 }
 
-/*main text*/
 .main-text {
   margin-bottom: 4rem;
   font-weight: 300;
@@ -55,7 +52,6 @@ body {
   color: var(--primary-text-color);
 }
 
-/*strong words*/
 .highlight {
   font-weight: 500;
 }
@@ -67,7 +63,6 @@ body {
   color: rgba(23, 25, 28, 1);
 }
 
-/*ul list*/
 .list {
   margin-bottom: 4rem;
   font-weight: 400;
@@ -76,13 +71,11 @@ body {
   color: var(--primary-text-color);
 }
 
-/*salary table*/
 .salary-table {
   border-collapse: collapse;
   margin-bottom: 2.9rem;
 }
 
-/*title*/
 .table-title {
   padding: 0.8rem 1.4rem;
   font-size: var(--basic-font-size);
@@ -92,7 +85,6 @@ body {
   border-bottom: 1px solid var(--border-color);
 }
 
-/*main text in table*/
 .table-text {
   padding-right: 0.9rem;
   font-size: var(--basic-font-size);
@@ -116,3 +108,32 @@ body {
   padding-left: 0.5rem;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .title-block{
+    height: 10rem;
+  }
+
+  .title-header{
+    font-size: 2rem;
+  }
+
+  .main-container{
+    width: 100%;
+  }
+
+  .inner-container{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .main-title{
+    font-size: 1.5rem;
+  }
+
+  .main-text, .list, .table-text{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+}
+
