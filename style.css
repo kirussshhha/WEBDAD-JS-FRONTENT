@@ -109,31 +109,45 @@ body {
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .title-block{
+.reactions-on-page {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.emojis {
+  margin: 0 0.2rem;
+}
+
+@media (max-width: 48rem) {
+  .title-block {
     height: 10rem;
   }
 
-  .title-header{
+  .title-header {
     font-size: 2rem;
   }
 
-  .main-container{
+  .main-container {
     width: 100%;
   }
 
-  .inner-container{
+  .inner-container {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 
-  .main-title{
+  .main-title {
     font-size: 1.5rem;
   }
 
-  .main-text, .list, .table-text{
+  .main-text,
+  .list,
+  .table-text {
     font-size: 1.1rem;
     line-height: 1.5rem;
   }
-}
 
+  .emojis {
+    margin: 0;
+  }
+}
