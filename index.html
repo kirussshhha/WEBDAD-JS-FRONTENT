@@ -12,7 +12,7 @@
       content="профессии, веб-разработка, дизайн, программирование, якыки программирования, направления в ИТ, фронтенд, бэкенд"
     />
     <meta name="author" content="kirussshhha" />
-    <link rel="icon" href="/img/webDadUprade.png" type="image/png" />
+    <link rel="icon" href="/img/favicon/webDadUprade.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -488,7 +488,7 @@
         </div>
       </div>
 
-      <article>
+      <article class="learn">
         <div class="learn-block">
           <h2 class="learn-title">Читай также</h2>
           <div class="learn-container">
@@ -547,7 +547,26 @@
           </div>
         </div>
       </article>
+
+      <section class="sub-form">
+        <div class="sub-form-container">
+          <p class="sub-form-text">
+            Подпишись, чтобы <span class="highlight"> не пропустить</span
+            ><br />наши новые статьи!
+          </p>
+          <form>
+            <input type="email" class="email-inp" placeholder="Введи почту" />
+            <input
+              type="button"
+              class="send-btn"
+              onclick="cleanInp()"
+              value="Отправить"
+            />
+          </form>
+        </div>
+      </section>
     </article>
-    <script src="script.js"></script>
+    <script src="script/emojis.js"></script>
+    <script src="script/send-email.js"></script>
   </body>
 </html>

@@ -2,6 +2,7 @@
   --primary-text-color: rgba(47, 53, 61, 1);
   --border-color: rgba(203, 203, 203, 1);
   --basic-font-size: 1.1rem;
+  --basic-font-weight: 300;
 }
 
 body {
@@ -88,7 +89,7 @@ body {
 .table-text {
   padding-right: 0.9rem;
   font-size: var(--basic-font-size);
-  font-weight: 300;
+  font-weight: var(--basic-font-weight);
   line-height: 1.8rem;
   color: var(--primary-text-color);
 }
@@ -123,7 +124,6 @@ body {
   width: 100%;
   height: 34.7rem;
   background-color: rgba(116, 182, 255, 0.15);
-  margin-bottom: 3rem;
 }
 
 .learn-title {
@@ -133,7 +133,7 @@ body {
   font-weight: 500;
   font-size: 2rem;
   line-height: 2.5rem;
-  color: #17191c;
+  color: var(--primary-text-color);
 }
 
 .learn-container {
@@ -167,6 +167,58 @@ body {
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.6rem;
+}
+
+.sub-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.sub-form-text {
+  padding-right: 3.5rem;
+  font-size: var(--basic-font-size);
+  font-weight: var(--basic-font-weight);
+  line-height: 1.6rem;
+  color: var(--primary-text-color);
+}
+
+.email-inp {
+  width: 14.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--primary-text-color);
+  font-size: var(--basic-font-size);
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.email-inp:focus {
+  box-shadow: 0.1rem 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.email-inp::placeholder {
+  padding-left: 1rem;
+  font-weight: var(--basic-font-weight);
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  color: #b4b5b8;
+}
+
+.send-btn {
+  margin-left: .5rem;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  background-color: #1874ff;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 @media (max-width: 48rem) {
@@ -213,5 +265,10 @@ body {
 
   .learn-block {
     height: 70rem;
+  }
+
+  .sub-form-container {
+    display: block;
+    text-align: center;
   }
 }
