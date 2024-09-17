@@ -12,6 +12,10 @@ body {
   background-color: rgba(244, 245, 247, 1);
 }
 
+.nav {
+  display: none;
+}
+
 .nav-header {
   position: fixed;
   top: 0;
@@ -21,24 +25,12 @@ body {
   z-index: 1000;
 }
 
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 64rem;
-  margin: 0 auto;
-}
-
-.logo{
-  padding: .75rem 0;
-}
-
 .nav-list {
   list-style: none;
   display: flex;
 }
 
-.link{
+.link {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   padding-right: 2rem;
@@ -46,18 +38,18 @@ body {
   font-weight: 400;
   line-height: 1.5rem;
   text-decoration: none;
-  color: #17191C;
+  color: #17191c;
 }
 
-.nav-btn{
-  padding: .45rem 1rem;
+.nav-btn {
+  padding: 0.45rem 1rem;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
-  color: #FFFFFF;
-  background-color: #1874FF;
+  color: #ffffff;
+  background-color: #1874ff;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .title-block {
@@ -68,9 +60,12 @@ body {
   margin-top: 9rem;
 }
 
-.title-header {
+.title {
+  display: none;
+}
+
+.header-title {
   text-align: center;
-  padding-top: 4rem;
   padding-bottom: 4rem;
   font-size: 3rem;
   font-weight: 700;
@@ -79,7 +74,6 @@ body {
 
 .main-container {
   width: 80%;
-  max-width: 64rem;
   margin: 0 auto;
 }
 
@@ -168,6 +162,10 @@ body {
   cursor: pointer;
 }
 
+.card{
+  display: none;
+}
+
 .learn-block {
   width: 100%;
   height: 34.7rem;
@@ -176,12 +174,10 @@ body {
 
 .learn-title {
   text-align: center;
-  padding-top: 4rem;
-  margin-bottom: 4rem;
   font-weight: 500;
   font-size: 2rem;
   line-height: 2.5rem;
-  color: var(--primary-text-color);
+  color: #17191C;
 }
 
 .learn-container {
@@ -196,12 +192,7 @@ body {
   border-radius: 1rem;
   margin: 0.7rem;
   cursor: pointer;
-  transition: transform 0.3s ease;
   box-shadow: 0 0.25rem 0.31rem rgba(0, 0, 0, 0.1);
-}
-
-.learn-card:hover {
-  transform: translateY(-5px);
 }
 
 .learn-more {
@@ -222,6 +213,10 @@ body {
   justify-content: center;
   align-items: center;
   padding: 4rem 0;
+}
+
+.subFormText{
+  display: none;
 }
 
 .sub-form-text {
@@ -269,54 +264,183 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 48rem) {
+@media (min-width: 64rem) {
+  .desktop-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 64rem;
+    margin: 0 auto;
+  }
+
+  .logo {
+    padding: 0.75rem 0;
+  }
+
+  .desktop-title {
+    display: block;
+  }
+
+  .main-container{
+    max-width: 64rem;
+  }
+
+  .header-title {
+    padding-top: 4rem;
+  }
+
+  .desktop-card{
+    display: block;
+  }
+
+  .learn-title{
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .desktop-sub-form-text{
+    display: block;
+  }
+}
+
+@media (min-width: 25.9rem) and (max-width: 48rem) {
+  .tablet-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .desktop-title {
+    display: block;
+  }
+
+  .main-container {
+    max-width: 64rem;
+  }
+
+  .tablet-card{
+    display: block;
+  }
+
+  .desktop-sub-form-text{
+    display: block;
+  }
+}
+
+@media (max-width: 25.9rem) {
+  .phone-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    padding: .75rem 1rem;
+  }
+
+  .burger {
+    padding-top: 1rem;
+    padding-bottom: 1.1rem;
+    padding-right: .87rem;
+  }
+
   .title-block {
+    width: 100%;
     height: 10rem;
   }
 
-  .title-header {
+  .phone-title {
+    display: block;
+  }
+
+  .header-title {
+    padding-top: 2.43rem;
+    padding-bottom: 2.56rem;
+    font-weight: 500;
     font-size: 2rem;
+    line-height: 2.5rem;
   }
 
   .main-container {
     width: 100%;
+    max-width: 18rem;
   }
 
-  .inner-container {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .main-img{
+    border-radius: 1rem;
   }
 
-  .main-title {
-    font-size: 1.5rem;
+  .inner-container{
+    padding: .1rem 0;
   }
 
-  .main-text,
-  .list,
-  .table-text {
-    font-size: 1.1rem;
+  .main-text{
+    font-size: 1rem;
     line-height: 1.5rem;
   }
 
-  .emojis {
-    margin: 0;
+  .main-title{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
-  .learn-container {
-    display: block;
-    text-align: center;
+  .table-title{
+    font-size: 1.12rem;
+    line-height: 1.8rem;
   }
 
-  .learn-card {
-    display: inline-block;
+  .table-text{
+    font-size: 1.12rem;
   }
 
   .learn-block {
-    height: 70rem;
+    height: 31.1rem;
   }
 
-  .sub-form-container {
+  .learn-title{
+    font-size: 1.5rem;
+    margin-bottom: 2.18rem;
+    padding-top: 4rem;
+  }
+
+  .phone-card{
     display: block;
-    text-align: center;
+  }
+
+  .learn-card{
+    width: 18rem;
+    height: 15.8rem;
+  }
+
+  .card-img{
+    width: 18rem; 
+    height: 10.5rem;  
+  }
+
+  .carusel{
+    display: flex;
+    padding-top: .93rem;
+    justify-content: center ;
+  }
+
+  .send-btn{
+    margin-top: 1rem;
+    margin-left: 0px;
+  }
+
+  .sub-form-container{
+    display: block;
+    padding: 4rem 1rem;
+    margin: 0 auto;
+  }
+
+  .phone-sub-form-text{
+    display: block;
+  }
+
+  .sub-form-text{
+    padding-right: 0;
+    font-size: 1.12 rem;
+    line-height: 1.62rem;
   }
 }
