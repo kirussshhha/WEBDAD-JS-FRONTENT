@@ -5,6 +5,24 @@
   --basic-font-weight: 300;
 }
 
+body,
+hr,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -78,11 +96,15 @@ body {
 }
 
 .main-text {
-  margin-bottom: 4rem;
+  margin-top: 1.5rem;
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: var(--basic-font-size);
   line-height: 1.8rem;
   color: var(--primary-text-color);
+}
+
+.main-text p {
+  margin-bottom: 2rem;
 }
 
 .highlight {
@@ -90,13 +112,15 @@ body {
 }
 
 .main-title {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 2rem;
   color: rgba(23, 25, 28, 1);
 }
 
-.list {
+.speciality-list {
   margin-bottom: 4rem;
   font-weight: 400;
   font-size: var(--basic-font-size);
@@ -192,8 +216,9 @@ body {
 
 .learn-text {
   text-align: left;
-  padding-left: 1rem;
-  font-size: 1.1rem;
+  padding-left: 1.2rem;
+  padding-top: 17px;
+  font-size: var(--basic-font-size);
   font-weight: 500;
   line-height: 1.6rem;
 }
@@ -236,14 +261,14 @@ body {
 .email-inp::placeholder {
   padding-left: 1rem;
   font-weight: var(--basic-font-weight);
-  font-size: 1.1rem;
+  font-size: var(--basic-font-size);
   line-height: 1.8rem;
   color: #b4b5b8;
 }
 
 .send-btn {
   margin-left: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.53rem 1rem;
   border-radius: 0.5rem;
   border: none;
   font-size: 1rem;
@@ -251,7 +276,127 @@ body {
   font-weight: 400;
   background-color: #1874ff;
   color: #ffffff;
-  cursor: pointer;
+}
+
+.footer {
+  background-color: #202328;
+  height: 23rem;
+}
+
+.footer-container {
+  padding-top: 4.37rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.nav-container {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.footer-nav {
+  margin-top: 1.1rem;
+}
+
+.footer-link {
+  margin-right: 2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.messengers {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.messengers-icons {
+  justify-self: center;
+  display: flex;
+  gap: 1.06rem;
+  align-items: center;
+}
+
+.vertical-line {
+  height: 1.8rem;
+  border: none;
+  width: 0.06rem;
+  background-color: #ffffff;
+}
+
+.phone-num {
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: inline;
+  color: #ffffff;
+}
+
+.email-contc {
+  margin-top: 1rem;
+  font-size: var(--basic-font-size);
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.address-inf {
+  margin-top: 2.1rem;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #ffffff;
+}
+
+.social {
+  justify-self: center;
+  padding-left: 0.95rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.register {
+  justify-self: flex-end;
+}
+
+.register-inf {
+  padding-top: 20px;
+  font-weight: 400;
+  line-height: 1.3rem;
+  font-size: 0.87rem;
+  color: #ffffff;
+}
+
+.privacy-policy,
+.user-agreement {
+  padding-top: 0.6rem;
+  line-height: 1.37rem;
+  font-size: 0.87rem;
+  color: #ffffff;
+}
+
+.footer-bottom {
+  margin-top: 5.5rem;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.footer-line {
+  margin-bottom: 1rem;
+}
+
+.footer-copy {
+  font-size: 0.87rem;
+  display: inline;
+  color: #ffffff;
+}
+
+.footer-copy-text {
+  font-size: 0.87rem;
+  padding-left: 28.6rem;
+  display: inline;
+  color: #ffffff;
 }
 
 @media (min-width: 64rem) {
@@ -492,6 +637,7 @@ body {
   }
 
   .sub-form-text {
+    margin-bottom: 1.5rem;
     padding-right: 0;
     font-size: 1.12 rem;
     line-height: 1.62rem;
