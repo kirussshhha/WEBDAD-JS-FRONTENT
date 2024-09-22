@@ -356,7 +356,8 @@ body {
   justify-self: flex-end;
 }
 
-.register-inf {
+.registerInf {
+  display: none;
   font-weight: 400;
   line-height: 1.3rem;
   font-size: 0.87rem;
@@ -464,8 +465,9 @@ body {
     padding-left: 0.95rem;
   }
 
-  .register-inf {
+  .desk-register-inf{
     padding-top: 20px;
+    display: block;
   }
 
   .privacy-policy,
@@ -482,7 +484,7 @@ body {
   }
 
   .desk-footer-text {
-    padding-left: 28.6rem;
+    padding-left: 28.7rem;
     display: inline;
   }
 }
@@ -490,7 +492,7 @@ body {
 @media (min-width: 25.9rem) and (max-width: 48rem) {
   .tablet-menu {
     width: 100%;
-    height: 64px;
+    height: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -541,7 +543,7 @@ body {
 
   .learn-block {
     width: 100%;
-    height: 546px;
+    height: 34.1rem;
   }
 
   .learn-title {
@@ -564,8 +566,86 @@ body {
     display: block;
   }
 
+  .footer {
+    height: 27rem;
+  }
+
+  .footer-container{
+    width: 100%;
+    max-width: 44rem;
+    padding-left: 1.25rem;
+    padding-top: 3rem;
+    margin: 0 auto;
+    padding-right: 1.5rem;
+    grid-template-areas: 
+    "nav messengers"
+    "social register"
+    "footer-bottom footer-bottom";
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav-container{
+    grid-area: nav;
+    justify-self: left;
+  }
+
+  .footer-nav {
+    padding-top: 1rem;
+  }
+
+  .messengers{
+    grid-area: messengers;
+    justify-self: left;
+  }
+
   .messengers-icons {
     display: flex;
+  }
+
+  .email-contc{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .social{
+    padding-top: 1rem;
+    grid-area: social;
+    justify-self: left;
+  }
+
+  .register{
+    padding-top: 3.68rem;
+    grid-area: register;
+    justify-self: left;
+  }
+
+  .tablet-register-inf{
+    padding-bottom: .5rem;
+    display: block;
+  }
+
+  .privacy-policy{
+    padding-bottom: .5rem;
+  }
+
+  .user-agreement{
+    padding-bottom: 2rem;
+  }
+
+  .footer-bottom{
+    grid-area: footer-bottom;
+    width: 100%;
+  }
+
+  .footer-copy {
+    display: inline;
+    font-size: .75rem;
+  }
+
+  .desk-footer-text{
+    margin-left: 13.5rem;
+    display: inline;
+    font-size: .75rem;
   }
 }
 
@@ -738,8 +818,11 @@ body {
     padding-bottom: 1rem;
   }
 
-  .address-inf {
+  .desk-register-inf {
+    display: block;
     padding-bottom: 1rem;
+    font-size: .75rem;
+    padding-bottom: .87rem;
   }
 
   .vertical-line {
@@ -747,6 +830,7 @@ body {
   }
 
   .social {
+    padding-top: 1rem;
     padding-bottom: 3rem;
     padding-left: 1rem;
     grid-area: social;
@@ -758,11 +842,6 @@ body {
     padding-left: 1rem;
     grid-area: register;
     justify-self: left;
-  }
-
-  .register-inf {
-    font-size: 0.75rem;
-    padding-bottom: 0.87rem;
   }
 
   .privacy-policy {
