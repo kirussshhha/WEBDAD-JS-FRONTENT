@@ -465,7 +465,7 @@ body {
     padding-left: 0.95rem;
   }
 
-  .desk-register-inf{
+  .desk-register-inf {
     padding-top: 20px;
     display: block;
   }
@@ -547,9 +547,10 @@ body {
   }
 
   .learn-title {
-    padding-top: 3.3rem;
+    padding-top: 3.9rem;
     font-size: 1.5rem;
     font-weight: 500;
+    padding-bottom: 2.3rem;
   }
 
   .tablet-card {
@@ -570,21 +571,21 @@ body {
     height: 27rem;
   }
 
-  .footer-container{
+  .footer-container {
     width: 100%;
     max-width: 44rem;
     padding-left: 1.25rem;
     padding-top: 3rem;
     margin: 0 auto;
     padding-right: 1.5rem;
-    grid-template-areas: 
-    "nav messengers"
-    "social register"
-    "footer-bottom footer-bottom";
+    grid-template-areas:
+      "nav messengers"
+      "social register"
+      "footer-bottom footer-bottom";
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .nav-container{
+  .nav-container {
     grid-area: nav;
     justify-self: left;
   }
@@ -593,7 +594,7 @@ body {
     padding-top: 1rem;
   }
 
-  .messengers{
+  .messengers {
     grid-area: messengers;
     justify-self: left;
   }
@@ -602,50 +603,50 @@ body {
     display: flex;
   }
 
-  .email-contc{
+  .email-contc {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
 
-  .social{
+  .social {
     padding-top: 1rem;
     grid-area: social;
     justify-self: left;
   }
 
-  .register{
+  .register {
     padding-top: 3.68rem;
     grid-area: register;
     justify-self: left;
   }
 
-  .tablet-register-inf{
-    padding-bottom: .5rem;
+  .tablet-register-inf {
+    padding-bottom: 0.5rem;
     display: block;
   }
 
-  .privacy-policy{
-    padding-bottom: .5rem;
+  .privacy-policy {
+    padding-bottom: 0.5rem;
   }
 
-  .user-agreement{
+  .user-agreement {
     padding-bottom: 2rem;
   }
 
-  .footer-bottom{
+  .footer-bottom {
     grid-area: footer-bottom;
     width: 100%;
   }
 
   .footer-copy {
     display: inline;
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
 
-  .desk-footer-text{
+  .desk-footer-text {
     margin-left: 13.5rem;
     display: inline;
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -821,8 +822,8 @@ body {
   .desk-register-inf {
     display: block;
     padding-bottom: 1rem;
-    font-size: .75rem;
-    padding-bottom: .87rem;
+    font-size: 0.75rem;
+    padding-bottom: 0.87rem;
   }
 
   .vertical-line {
