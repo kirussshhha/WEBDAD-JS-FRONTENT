@@ -68,6 +68,11 @@ body {
   background-color: #1874ff;
   border: none;
   border-radius: 0.5rem;
+  transition: .2s ease;
+}
+
+.nav-btn:hover{
+  background-color: #519DFF;
 }
 
 .title-block {
@@ -109,6 +114,15 @@ body {
 
 .highlight {
   font-weight: 500;
+}
+
+.text-link{
+  text-decoration: none;
+  transition: .3s ease;
+}
+
+.text-link:hover{
+  color: #519DFF;
 }
 
 .main-title {
@@ -206,7 +220,12 @@ body {
   border-radius: 1rem;
   margin: 0.7rem;
   cursor: pointer;
-  box-shadow: 0 0.25rem 0.31rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.4s ease;
+}
+
+.learn-card:hover{
+  box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 .learn-more {
@@ -276,6 +295,11 @@ body {
   font-weight: 400;
   background-color: #1874ff;
   color: #ffffff;
+  transition: .2s ease;
+}
+
+.send-btn:hover{
+  background-color: #519DFF;
 }
 
 .footer {
