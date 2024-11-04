@@ -24,7 +24,7 @@
   </head>
   <body>
     <header class="nav-header">
-      <div class="nav desktop-menu">
+      <div class="desktop-menu">
         <div class="logo">
           <a href="#">
             <picture>
@@ -48,60 +48,19 @@
             <li><a class="link" href="#">Лаборатория</a></li>
           </ul>
         </nav>
-        <input type="button" class="nav-btn" value="Начать" />
+        <div>
+          <input type="button" class="nav-btn" value="Начать" />
+        </div>
+        <div class="burger">
+          <img src="img/icons/Burger.svg" alt="Burger" />
+        </div>
       </div>
-
-      <nav class="nav tablet-menu">
-        <div class="logo">
-          <a href="#">
-            <picture>
-              <source
-                srcset="/img/logo/compressed/Logo Upgrade.webp"
-                type="image/webp"
-              />
-              <img src="img/logo/Logo Upgrade.svg" alt="Логотип upgrade" />
-            </picture>
-          </a>
-        </div>
-        <input type="button" class="nav-btn" value="Начать" />
-        <div class="burger">
-          <img src="img/icons/Burger.svg" alt="Burger" />
-        </div>
-      </nav>
-
-      <nav class="nav phone-menu">
-        <div class="logo">
-          <a href="#">
-            <picture>
-              <source
-                srcset="/img/logo/compressed/Logo Upgrade.webp"
-                type="image/webp"
-              />
-              <img src="img/logo/Logo Upgrade.svg" alt="Логотип upgrade" />
-            </picture>
-          </a>
-        </div>
-        <div class="burger">
-          <img src="img/icons/Burger.svg" alt="Burger" />
-        </div>
-      </nav>
     </header>
 
     <article>
-      <header class="header">
-        <div class="title-block">
-          <div class="title desktop-title">
-            <h1 class="header-title">Кем стать в ИТ сфере?</h1>
-          </div>
-
-          <div class="title phone-title">
-            <h1 class="header-title">
-              Кем стать в ИТ<br />
-              сфере?
-            </h1>
-          </div>
-        </div>
-      </header>
+      <div class="title-block">
+        <h1 class="title">Кем стать в ИТ сфере?</h1>
+      </div>
 
       <div class="main-container">
         <picture>
@@ -164,18 +123,20 @@
                 сегодняшний день является веб-разработка. То есть просто
                 создание сайтов. Для этого необходимо понимать
                 <a class="text-link" href="https://www.w3.org/html/">HTML</a>,
-                <a class="text-link" href="https://www.w3.org/Style/CSS/">CSS</a>, а также такие
-                языки программирования как
-                <a class="text-link"
+                <a class="text-link" href="https://www.w3.org/Style/CSS/">CSS</a
+                >, а также такие языки программирования как
+                <a
+                  class="text-link"
                   href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                   >JS</a
                 >
-                (JavaScript) и <a class="text-link" href="https://www.php.net/">PHP</a>. С помощью
-                навыков владения языком гипертекстовой разметки HTML вы сможете
-                создавать основу сайта. Что касается CSS это дополнение к HTML,
-                с помощью которого разработчик настраивает внешний вид сайта.
-                PHP позволяет программировать взаимодействия пользователя с
-                сайтом, передачи нужной информации в базу данных. JavaScript
+                (JavaScript) и
+                <a class="text-link" href="https://www.php.net/">PHP</a>. С
+                помощью навыков владения языком гипертекстовой разметки HTML вы
+                сможете создавать основу сайта. Что касается CSS это дополнение
+                к HTML, с помощью которого разработчик настраивает внешний вид
+                сайта. PHP позволяет программировать взаимодействия пользователя
+                с сайтом, передачи нужной информации в базу данных. JavaScript
                 позволит создать сайт более динамичным, более функциональным.
               </p>
               <p>
@@ -200,12 +161,13 @@
                 Такие специалисты в добавок к стандартным HTML, CSS и JS часто
                 используют в своей работе различные фреймворки такие, как
                 <a class="text-link" href="https://vuejs.org/">Vue</a>,
-                <a class="text-link" href="https://angular.io/">Angular</a> и (или) библиотеки на
-                подобии React, WebPack и прочее. Также трендом среди
-                фронтенд-разработчиков является использование надстройки над
-                языком программирования JavaScript —
-                <a class="text-link" href="https://www.typescriptlang.org/">TypeScript</a>,
-                который добавляет в язык статическую типизацию.
+                <a class="text-link" href="https://angular.io/">Angular</a> и
+                (или) библиотеки на подобии React, WebPack и прочее. Также
+                трендом среди фронтенд-разработчиков является использование
+                надстройки над языком программирования JavaScript —
+                <a class="text-link" href="https://www.typescriptlang.org/"
+                  >TypeScript</a
+                >, который добавляет в язык статическую типизацию.
               </p>
             </div>
           </section>
@@ -220,12 +182,23 @@
                 <span class="highlight">написать</span> максимально быстрые
                 алгоритмы для решения задач бизнеса. Для решения данных задач
                 используются специализированные языки программирования такие как
-                уже указанный PHP или NodeJS, <a class="text-link" href="https://go.dev/">Go</a>,
-                <a class="text-link" href="https://docs.oracle.com/en/java">Java</a>,
-                <a class="text-link" href="https://learn.microsoft.com/en-us/dotnet/">Net</a>,
+                уже указанный PHP или NodeJS,
+                <a class="text-link" href="https://go.dev/">Go</a>,
+                <a class="text-link" href="https://docs.oracle.com/en/java"
+                  >Java</a
+                >,
+                <a
+                  class="text-link"
+                  href="https://learn.microsoft.com/en-us/dotnet/"
+                  >Net</a
+                >,
                 <a class="text-link" href="https://docs.python.org/">Python</a>,
-                <a class="text-link" href="https://www.ruby-lang.org/en/documentation/">Ruby</a> и
-                другие. Бэкенд специалисты плотно взаимодействуют с системами
+                <a
+                  class="text-link"
+                  href="https://www.ruby-lang.org/en/documentation/"
+                  >Ruby</a
+                >
+                и другие. Бэкенд специалисты плотно взаимодействуют с системами
                 хранения информации такие как SQL и NoSQL базы данных, S3
                 файловые хранилища, а также с легкостью смогут построить
                 взаимодействие с другими сервисами по протоколу API.
@@ -258,12 +231,15 @@
                 ПО для операционных систем. То есть это просто любые программы,
                 которые предварительно устанавливаются на компьютере (word,
                 excel и т.п.). Для этого подходят языки программирования как:
-                <a class="text-link"
+                <a
+                  class="text-link"
                   href="https://learn.microsoft.com/en-us/cpp/c-language/?view=msvc-170"
                   >C</a
                 >
                 (си плюс плюс),
-                <a class="text-link" href="https://learn.microsoft.com/en-us/dotnet/csharp/"
+                <a
+                  class="text-link"
+                  href="https://learn.microsoft.com/en-us/dotnet/csharp/"
                   >C#</a
                 >
                 (си шарп).
@@ -287,7 +263,10 @@
                 постоянно задумываться и тратить время, средства для привлечения
                 новых пользователей. Для этой деятельности подойдет уже ранее
                 упомянутые языки C, C#, а также java,
-                <a class="text-link" href="https://docs.flutter.dev/">Flutter</a> и другие.
+                <a class="text-link" href="https://docs.flutter.dev/"
+                  >Flutter</a
+                >
+                и другие.
               </p>
             </div>
           </section>
@@ -321,13 +300,23 @@
                 и не шаблонные сайты для повышения конверсии сайта. Такие
                 специалисты владеют теорией цвета и типографики, а также
                 используют в работе
-                <a class="text-link" href="https://en.wikipedia.org/wiki/Adobe_Photoshop"
+                <a
+                  class="text-link"
+                  href="https://en.wikipedia.org/wiki/Adobe_Photoshop"
                   >Photoshop</a
                 >,
-                <a class="text-link" href="https://en.wikipedia.org/wiki/Adobe_Illustrator"
+                <a
+                  class="text-link"
+                  href="https://en.wikipedia.org/wiki/Adobe_Illustrator"
                   >Illustrator</a
-                >, <a class="text-link" href="https://en.wikipedia.org/wiki/Figma">Figma</a> и
-                <a class="text-link" href="https://en.wikipedia.org/wiki/Sketch">Sketch</a>.
+                >,
+                <a class="text-link" href="https://en.wikipedia.org/wiki/Figma"
+                  >Figma</a
+                >
+                и
+                <a class="text-link" href="https://en.wikipedia.org/wiki/Sketch"
+                  >Sketch</a
+                >.
               </p>
             </div>
           </section>
@@ -627,7 +616,7 @@
       <article>
         <div class="learn-block">
           <h2 class="learn-title">Читай также</h2>
-          <div class="card desktop-card">
+          <div class="desktop-card">
             <div class="learn-container">
               <a href="#" class="learn-more">
                 <figure class="learn-card">
@@ -698,107 +687,18 @@
               </a>
             </div>
           </div>
-
-          <div class="card tablet-card">
-            <div class="learn-container">
-              <a href="#" class="learn-more">
-                <figure class="learn-card">
-                  <picture>
-                    <source
-                      class="card-img"
-                      srcset="/img/learn-more/compressed/find-work.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      class="card-img"
-                      src="img/learn-more/find-work.png"
-                      alt="Как найти работу в ИТ-план действий"
-                    />
-                  </picture>
-                  <figcaption>
-                    <p class="learn-text">
-                      Как найти работу в ИТ-<br />план действий
-                    </p>
-                  </figcaption>
-                </figure>
-              </a>
-
-              <a href="#" class="learn-more">
-                <figure class="learn-card">
-                  <picture>
-                    <source
-                      class="card-img"
-                      srcset="/img/learn-more/compressed/which-skill-need.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      class="card-img"
-                      src="img/learn-more/which-skill-need.png"
-                      alt="Какие навыки нужны программисту?"
-                    />
-                  </picture>
-                  <figcaption>
-                    <p class="learn-text">
-                      Какие навыки нужны <br />
-                      программисту?
-                    </p>
-                  </figcaption>
-                </figure>
-              </a>
-            </div>
-
-            <div class="carusel">
-              <img src="img/icons/Carusel.svg" alt="Карусель" />
-            </div>
-          </div>
-
-          <div class="card phone-card">
-            <div class="learn-container">
-              <a href="#" class="learn-more">
-                <figure class="learn-card">
-                  <picture>
-                    <source
-                      class="card-img"
-                      srcset="/img/learn-more/compressed/find-work.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      class="card-img"
-                      src="img/learn-more/find-work.png"
-                      alt="Как найти работу в ИТ-план действий"
-                    />
-                  </picture>
-                  <figcaption>
-                    <p class="learn-text">
-                      Как найти работу в ИТ-<br />план действий
-                    </p>
-                  </figcaption>
-                </figure>
-              </a>
-            </div>
-            <div class="carusel">
-              <img src="img/icons/Carusel.svg" alt="Карусель" />
-            </div>
+          <div class="card-slider">
+            <img class="slider" src="/img/icons/Carusel.svg" alt="Слайдер" />
           </div>
         </div>
       </article>
 
       <section class="sub-form">
         <div class="sub-form-container">
-          <div class="subFormText phone-sub-form-text">
-            <p class="sub-form-text">
-              Подпишись, чтобы<br />
-              <span class="highlight">не пропустить </span>наши новые<br />
-              статьи!
-            </p>
-          </div>
-
-          <div class="subFormText desktop-sub-form-text">
-            <p class="sub-form-text">
-              Подпишись, чтобы <span class="highlight"> не пропустить</span
-              ><br />наши новые статьи!
-            </p>
-          </div>
+          <p class="sub-form-text">
+            Подпишись, чтобы<span class="highlight"> не пропустить</span> наши
+            новые статьи!
+          </p>
           <form>
             <input type="email" class="email-inp" placeholder="Введи почту" />
             <input
@@ -878,13 +778,8 @@
           </section>
 
           <section class="register">
-            <p class="registerInf desk-register-inf">
-              Свидетельство о гос. регистрации<br />
-              № 291667035 от 26.10.2020
-            </p>
-            <p class="registerInf tablet-register-inf">
-              Свидетельство о гос. регистрации № 291667035 <br />
-              от 26.10.2020
+            <p class="registerInf">
+              Свидетельство о гос. регистрации № 291667035 от 26.10.2020
             </p>
             <p class="privacy-policy">Политика конфиденциальности</p>
             <p class="user-agreement">Пользовательское соглашение</p>
@@ -893,12 +788,8 @@
           <section class="footer-bottom">
             <hr class="footer-line" />
             <p class="footer-copy">© Webdad Upgrade 2021</p>
-            <p class="footerText desk-footer-text">
+            <p class="footerText">
               Сайт сделан и обслуживается студентами Webdad Upgrade
-            </p>
-            <p class="footerText phone-footer-text">
-              Сайт сделан и обслуживается<br />
-              студентами Webdad Upgrade
             </p>
           </section>
         </div>

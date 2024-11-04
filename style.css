@@ -24,14 +24,9 @@ dd {
 }
 
 body {
-  margin: 0;
   padding: 0;
   font-family: "Rubik", sans-serif;
   background-color: rgba(244, 245, 247, 1);
-}
-
-.nav {
-  display: none;
 }
 
 .nav-header {
@@ -40,7 +35,16 @@ body {
   width: 100%;
   height: 4rem;
   background-color: #ffffff;
-  z-index: 1000;
+  z-index: 1;
+}
+
+.desktop-menu {
+  max-width: 64rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  margin: 0 auto;
 }
 
 .nav-list {
@@ -68,36 +72,48 @@ body {
   background-color: #1874ff;
   border: none;
   border-radius: 0.5rem;
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
 
-.nav-btn:hover{
-  background-color: #519DFF;
+.nav-btn:hover {
+  background-color: #519dff;
+}
+
+.burger {
+  display: none;
 }
 
 .title-block {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 11.5rem;
   background-color: rgba(116, 182, 255, 0.15);
   margin-bottom: 3rem;
-  margin-top: 9rem;
+  margin-top: 10rem;
 }
 
 .title {
-  display: none;
-}
-
-.header-title {
   text-align: center;
-  padding-bottom: 4rem;
   font-size: 3rem;
   font-weight: 700;
   color: rgba(23, 25, 28, 1);
 }
 
+.main-container {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
 .main-img {
   width: 100%;
   height: 100%;
+}
+
+.inner-container {
+  padding-left: 11rem;
+  padding-right: 11rem;
 }
 
 .main-text {
@@ -116,13 +132,13 @@ body {
   font-weight: 500;
 }
 
-.text-link{
+.text-link {
   text-decoration: none;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
-.text-link:hover{
-  color: #519DFF;
+.text-link:hover {
+  color: #519dff;
 }
 
 .main-title {
@@ -148,7 +164,7 @@ body {
 }
 
 .table-title {
-  padding: 0.8rem 1.4rem;
+  padding: 0.8rem 1rem;
   font-size: var(--basic-font-size);
   font-weight: 400;
   line-height: 1.8rem;
@@ -190,10 +206,6 @@ body {
   cursor: pointer;
 }
 
-.card {
-  display: none;
-}
-
 .learn-block {
   width: 100%;
   height: 34.7rem;
@@ -206,11 +218,13 @@ body {
   font-size: 2rem;
   line-height: 2.5rem;
   color: #17191c;
+  padding-top: 4rem;
 }
 
 .learn-container {
   display: flex;
   justify-content: center;
+  padding-top: 4rem;
 }
 
 .learn-card {
@@ -224,7 +238,7 @@ body {
   transition: box-shadow 0.4s ease;
 }
 
-.learn-card:hover{
+.learn-card:hover {
   box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
@@ -236,10 +250,14 @@ body {
 .learn-text {
   text-align: left;
   padding-left: 1.2rem;
-  padding-top: 17px;
+  padding-top: 1.1rem;
   font-size: var(--basic-font-size);
   font-weight: 500;
   line-height: 1.6rem;
+}
+
+.card-slider {
+  display: none;
 }
 
 .sub-form-container {
@@ -249,11 +267,8 @@ body {
   padding: 4rem 0;
 }
 
-.subFormText {
-  display: none;
-}
-
 .sub-form-text {
+  width: 18rem;
   padding-right: 3.5rem;
   font-size: var(--basic-font-size);
   font-weight: var(--basic-font-weight);
@@ -295,11 +310,11 @@ body {
   font-weight: 400;
   background-color: #1874ff;
   color: #ffffff;
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
 
-.send-btn:hover{
-  background-color: #519DFF;
+.send-btn:hover {
+  background-color: #519dff;
 }
 
 .footer {
@@ -317,11 +332,16 @@ body {
   width: 100%;
   max-width: 64rem;
   margin: 0 auto;
+  padding-top: 4.37rem;
 }
 
 .nav-container {
   grid-area: nav;
   grid-row: span 2;
+}
+
+.footer-nav {
+  margin-top: 1.1rem;
 }
 
 .footer-link {
@@ -337,7 +357,7 @@ body {
 }
 
 .messengers-icons {
-  justify-self: center;
+  display: flex;
   gap: 1.06rem;
   align-items: center;
 }
@@ -359,6 +379,7 @@ body {
   font-size: var(--basic-font-size);
   font-weight: 500;
   color: #ffffff;
+  margin-top: 1rem;
 }
 
 .address-inf {
@@ -366,6 +387,7 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
   color: #ffffff;
+  margin-top: 2.1rem;
 }
 
 .social {
@@ -373,6 +395,7 @@ body {
   justify-self: center;
   display: flex;
   gap: 1rem;
+  padding-left: 0.95rem;
 }
 
 .register {
@@ -381,11 +404,14 @@ body {
 }
 
 .registerInf {
+  width: 239px;
   display: none;
   font-weight: 400;
   line-height: 1.3rem;
   font-size: 0.87rem;
   color: #ffffff;
+  padding-top: 20px;
+  display: block;
 }
 
 .privacy-policy,
@@ -393,10 +419,12 @@ body {
   line-height: 1.37rem;
   font-size: 0.87rem;
   color: #ffffff;
+  padding-top: 0.6rem;
 }
 
 .footer-bottom {
   grid-area: footer-bottom;
+  margin-top: 5.5rem;
 }
 
 .footer-line {
@@ -409,165 +437,60 @@ body {
 .footer-copy {
   font-size: 0.87rem;
   color: #ffffff;
+  display: inline;
 }
 
 .footerText {
-  display: none;
   font-size: 0.87rem;
   color: #ffffff;
+  padding-left: 28.7rem;
+  display: inline;
 }
 
-@media (min-width: 64rem) {
+@media (max-width: 48rem) {
   .desktop-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 64rem;
-    margin: 0 auto;
-  }
-
-  .logo {
-    padding: 0.75rem 0;
-  }
-
-  .desktop-title {
-    display: block;
-  }
-
-  .main-container {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .inner-container {
-    padding-left: 9.9rem;
-    padding-right: 9.9rem;
-  }
-
-  .main-container {
-    max-width: 64rem;
-  }
-
-  .header-title {
-    padding-top: 4rem;
-  }
-
-  .desktop-card {
-    display: block;
-  }
-
-  .learn-title {
-    padding-top: 4rem;
-    margin-bottom: 4rem;
-  }
-
-  .desktop-sub-form-text {
-    display: block;
-  }
-
-  .footer-container {
-    padding-top: 4.37rem;
-  }
-
-  .footer-nav {
-    margin-top: 1.1rem;
-  }
-
-  .messengers-icons {
-    display: flex;
-  }
-
-  .email-contc {
-    margin-top: 1rem;
-  }
-
-  .address-inf {
-    margin-top: 2.1rem;
-  }
-
-  .social {
-    padding-left: 0.95rem;
-  }
-
-  .desk-register-inf {
-    padding-top: 20px;
-    display: block;
-  }
-
-  .privacy-policy,
-  .user-agreement {
-    padding-top: 0.6rem;
-  }
-
-  .footer-bottom {
-    margin-top: 5.5rem;
-  }
-
-  .footer-copy {
-    display: inline;
-  }
-
-  .desk-footer-text {
-    padding-left: 28.7rem;
-    display: inline;
-  }
-}
-
-@media (min-width: 25.9rem) and (max-width: 48rem) {
-  .tablet-menu {
-    width: 100%;
-    height: 4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    padding-left: 1.5rem;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .burger {
-    padding-top: 1.06rem;
-    padding-bottom: 1.06rem;
-    padding-right: 1.5rem;
-    padding-left: 3rem;
-  }
-
-  .nav-btn {
-    margin-left: auto;
-  }
-
-  .title-block {
-    width: 100%;
-    height: 7.5rem;
-  }
-
-  .desktop-title {
     display: block;
   }
 
-  .header-title {
-    padding-top: 2.5rem;
-    padding-bottom: 2.3rem;
+  .nav-list {
+    display: none;
+  }
+
+  .title-block {
+    height: 7.5rem;
+  }
+
+  .title {
     font-weight: 500;
     font-size: 2rem;
     line-height: 2.5rem;
   }
 
   .main-container {
+    max-width: none;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 
-  .main-text {
-    font-size: var(--basic-font-size);
+  .inner-container {
+    padding: 0;
   }
 
-  .learn-block {
-    width: 100%;
-    height: 34.1rem;
+  .table-title {
+    font-size: 0.9rem;
+  }
+
+  .table-text {
+    font-size: 0.9rem;
+  }
+
+  .card-slider {
+    display: block;
   }
 
   .learn-title {
@@ -577,27 +500,25 @@ body {
     padding-bottom: 2.3rem;
   }
 
-  .tablet-card {
-    display: block;
+  .learn-container {
+    padding-top: 0rem;
   }
 
-  .carusel {
-    display: flex;
-    padding-top: 0.93rem;
-    justify-content: center;
+  .learn-more:nth-child(3) {
+    display: none;
   }
 
-  .desktop-sub-form-text {
-    display: block;
+  .card-slider {
+    margin-top: 1rem;
+    text-align: center;
   }
 
   .footer {
-    height: 27rem;
+    height: 28rem;
   }
 
   .footer-container {
-    width: 100%;
-    max-width: 44rem;
+    width: 44rem;
     padding-left: 1.25rem;
     padding-top: 3rem;
     margin: 0 auto;
@@ -615,10 +536,11 @@ body {
   }
 
   .footer-nav {
-    padding-top: 1rem;
+    margin-top: 1.4rem;
   }
 
   .messengers {
+    padding-top: 0.6rem;
     grid-area: messengers;
     justify-self: left;
   }
@@ -628,25 +550,29 @@ body {
   }
 
   .email-contc {
-    padding-top: 1rem;
     padding-bottom: 1rem;
   }
 
+  .address-inf {
+    margin-top: 1rem;
+  }
+
   .social {
-    padding-top: 1rem;
+    padding-top: 0.6rem;
+    padding-left: 0rem;
     grid-area: social;
     justify-self: left;
   }
 
   .register {
-    padding-top: 3.68rem;
+    padding-top: 3.4rem;
     grid-area: register;
     justify-self: left;
   }
 
-  .tablet-register-inf {
-    padding-bottom: 0.5rem;
-    display: block;
+  .registerInf {
+    width: 21rem;
+    padding-top: 0rem;
   }
 
   .privacy-policy {
@@ -654,10 +580,12 @@ body {
   }
 
   .user-agreement {
+    padding-top: 0rem;
     padding-bottom: 2rem;
   }
 
   .footer-bottom {
+    margin-top: 0;
     grid-area: footer-bottom;
     width: 100%;
   }
@@ -667,106 +595,59 @@ body {
     font-size: 0.75rem;
   }
 
-  .desk-footer-text {
-    margin-left: 13.5rem;
+  .footerText {
+    padding-left: 13.5rem;
     display: inline;
     font-size: 0.75rem;
   }
 }
 
-@media (max-width: 25.9rem) {
-  .phone-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo {
-    padding: 0.75rem 1rem;
-  }
-
-  .burger {
-    padding-top: 1rem;
-    padding-bottom: 1.1rem;
-    padding-right: 0.87rem;
+@media (max-width: 35.9rem) {
+  .nav-btn {
+    display: none;
   }
 
   .title-block {
-    width: 100%;
     height: 10rem;
   }
 
-  .phone-title {
-    display: block;
-  }
-
-  .header-title {
-    padding-top: 2.43rem;
-    padding-bottom: 2.56rem;
+  .title {
+    width: 17.5rem;
     font-weight: 500;
     font-size: 2rem;
     line-height: 2.5rem;
   }
 
   .main-container {
-    padding: 0 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
-  .main-img {
-    border-radius: 1rem;
+  .learn-more:nth-child(1) {
+    display: none;
   }
 
-  .inner-container {
-    padding: 0.1rem 0;
+  .learn-more:nth-child(3) {
+    display: none;
   }
 
-  .main-text {
-    font-size: 1rem;
-    line-height: 1.5rem;
+  .sub-form-container {
+    flex-direction: column;
   }
 
-  .main-title {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .sub-form-container {
+    width: 280px;
+    margin: 0 auto;
   }
 
-  .table-title {
-    font-size: var(--basic-font-size);
-    line-height: 1.8rem;
+  .sub-form-text {
+    width: 220px;
+    text-align: left;
   }
 
-  .table-text {
-    font-size: var(--basic-font-size);
-  }
-
-  .learn-block {
-    height: 31.1rem;
-  }
-
-  .learn-title {
-    font-size: 1.5rem;
-    margin-bottom: 2.18rem;
-    padding-top: 4rem;
-  }
-
-  .phone-card {
-    display: block;
-  }
-
-  .learn-card {
-    width: 18rem;
-    height: 15.8rem;
-  }
-
-  .card-img {
-    width: 18rem;
-    height: 10.5rem;
-  }
-
-  .carusel {
-    display: flex;
-    padding-top: 0.93rem;
-    justify-content: center;
+  .email-inp {
+    margin-top: 1rem;
+    width: 288px;
   }
 
   .send-btn {
@@ -774,29 +655,13 @@ body {
     margin-left: 0rem;
   }
 
-  .sub-form-container {
-    display: block;
-    padding: 4rem 1rem;
-    margin: 0 auto;
-  }
-
-  .phone-sub-form-text {
-    display: block;
-  }
-
-  .sub-form-text {
-    margin-bottom: 1.5rem;
-    padding-right: 0;
-    font-size: 1.12 rem;
-    line-height: 1.62rem;
-  }
-
   .footer {
-    width: 100%;
     height: 45.5rem;
   }
 
   .footer-container {
+    width: 20rem;
+
     grid-template-areas:
       "nav"
       "messengers"
@@ -808,19 +673,13 @@ body {
   }
 
   .nav-container {
-    padding-top: 4rem;
-    padding-left: 1rem;
+    padding-top: 1rem;
     grid-area: nav;
     justify-self: left;
   }
 
-  .footer-nav {
-    padding-top: 1rem;
-  }
-
   .messengers {
     padding-top: 3rem;
-    padding-left: 1rem;
     grid-area: messengers;
     justify-self: left;
     display: grid;
@@ -828,6 +687,7 @@ body {
 
   .messengers-icons {
     justify-self: left;
+    display: block;
   }
 
   .messenger-icon {
@@ -840,14 +700,13 @@ body {
   }
 
   .email-contc {
+    margin-top: 0rem;
     padding-bottom: 1rem;
   }
 
-  .desk-register-inf {
-    display: block;
-    padding-bottom: 1rem;
+  .registerInf {
+    width: 13rem;
     font-size: 0.75rem;
-    padding-bottom: 0.87rem;
   }
 
   .vertical-line {
@@ -856,15 +715,13 @@ body {
 
   .social {
     padding-top: 1rem;
-    padding-bottom: 3rem;
-    padding-left: 1rem;
     grid-area: social;
     justify-self: left;
   }
 
   .register {
+    padding-top: 3rem;
     padding-bottom: 1.5rem;
-    padding-left: 1rem;
     grid-area: register;
     justify-self: left;
   }
@@ -875,23 +732,29 @@ body {
   }
   .user-agreement {
     font-size: 0.75rem;
+    padding-bottom: 0rem;
   }
 
   .footer-bottom {
+    width: 17.5rem;
     grid-area: footer-bottom;
+    text-align: center;
   }
 
   .footer-line {
-    width: 100%;
+    width: 18.75rem;
   }
 
   .footer-copy {
+    width: 15rem;
     padding-bottom: 0.5rem;
-    text-align: center;
   }
 
-  .phone-footer-text {
+  .footerText {
+    width: 15rem;
+    padding-left: 0rem;
+    padding-top: 0.5rem;
     display: block;
-    text-align: center;
+    margin: 0 auto;
   }
 }
